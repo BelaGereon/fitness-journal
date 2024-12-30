@@ -4,7 +4,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
 
   font-family: "Roboto", sans-serif;
   color: var(--text-primary-color);
+  font-size: large;
 
   background-color: var(--background-color);
 }
@@ -56,6 +57,8 @@ h6 {
 
 .feature {
   grid-column: feature;
+  color: var(--background-color);
+  background-color: var(--primary-accent-color);
 }
 
 .full {
