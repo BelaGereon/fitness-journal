@@ -1,0 +1,29 @@
+/* Utility class to handle all the different colors used in the application */
+
+:root {
+  /* Main Accents*/
+  --vibrant-green: #3dbe29;
+  --bright-coral: #ff6f61;
+  --soft-lemon-yellow: #f5d300;
+
+  /* Neutral Colors */
+  --soft-light-gray: #f7f7f7;
+  --charcoal-gray: #333333;
+  --off-white: #f9f9f9;
+
+  /* Natural & Grounded */
+  --earthy-olive-green: #6d7c2a;
+  --warm-taupe: #d1b39b;
+  --clay-brown: #d07d38;
+
+  /* Cool Tones */
+  --dusty-blue: #a7b9cc;
+  --soft-mint: #a8e0d8;
+
+  /* UI Accents */
+  --sky-blue: #00aeef;
+  --warm-tangerine: #f7a800;
+
+  /* Dark for emphasis */
+  --deep-navy-blue: #2c3e50;
+}
