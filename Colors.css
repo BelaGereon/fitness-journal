@@ -1,0 +1,19 @@
+/* Utility class to handle all the different colors used in the application */
+
+:root {
+  /* Background Colors */
+  --background-color: #0d1117; /* Deep dark gray */
+  --card-background-color: #161b22; /* Slightly lighter dark gray */
+
+  /* Accent Colors */
+  --primary-accent-color: #00d1ff; /* Neon blue */
+  --secondary-accent-color: #39ff14; /* Neon green */
+
+  /* Text Colors */
+  --text-primary-color: #c9d1d9; /* Light gray */
+  --text-secondary-color: #8b949e; /* Muted gray */
+
+  /* Borders and Shadows */
+  --border-color: #30363d; /* Dark gray for borders */
+  --shadow-color: rgba(0, 0, 0, 0.7); /* Subtle shadow */
+}
