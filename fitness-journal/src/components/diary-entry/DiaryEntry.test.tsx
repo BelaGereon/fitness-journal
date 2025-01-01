@@ -21,4 +21,14 @@ describe("DiaryEntry Component", () => {
 
     expect(screen.getByText("Child content")).toBeInTheDocument();
   });
+
+  it("renders different child content correctly", () => {
+    render(
+      <DiaryEntry date={date}>
+        <div>Different child content</div>
+      </DiaryEntry>
+    );
+
+    expect(screen.getByText("Different child content")).toBeInTheDocument();
+  });
 });
