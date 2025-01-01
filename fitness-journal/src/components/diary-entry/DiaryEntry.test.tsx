@@ -1,0 +1,34 @@
+import { describe, expect, it } from "vitest";
+import { render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom";
+import DiaryEntry from "./DiaryEntry";
+
+describe("DiaryEntry Component", () => {
+  const date = "01. Jan 2025";
+
+  it("renders without crashing", () => {
+    render(<DiaryEntry date={date}></DiaryEntry>);
+
+    expect(screen.getByText("01. Jan 2025")).toBeInTheDocument();
+  });
+
+  it("renders child content correctly", () => {
+    render(
+      <DiaryEntry date={date}>
+        <div>Child content</div>
+      </DiaryEntry>
+    );
+
+    expect(screen.getByText("Child content")).toBeInTheDocument();
+  });
+
+  it("renders different child content correctly", () => {
+    render(
+      <DiaryEntry date={date}>
+        <div>Different child content</div>
+      </DiaryEntry>
+    );
+
+    expect(screen.getByText("Different child content")).toBeInTheDocument();
+  });
+});
