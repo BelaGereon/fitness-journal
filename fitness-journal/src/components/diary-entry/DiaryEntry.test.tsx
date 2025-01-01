@@ -7,12 +7,18 @@ describe("DiaryEntry Component", () => {
   const date = "01. Jan 2025";
 
   it("renders without crashing", () => {
+    render(<DiaryEntry date={date}></DiaryEntry>);
+
+    expect(screen.getByText("01. Jan 2025")).toBeInTheDocument();
+  });
+
+  it("renders child content correctly", () => {
     render(
       <DiaryEntry date={date}>
         <div>Child content</div>
       </DiaryEntry>
     );
 
-    expect(screen.getByText("01. Jan 2025")).toBeInTheDocument();
+    expect(screen.getByText("Child content")).toBeInTheDocument();
   });
 });
