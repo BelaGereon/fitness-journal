@@ -5,7 +5,7 @@ interface DiaryEntryProps {
   date: string;
   entry: React.ReactNode[];
   nextSteps?: React.ReactNode;
-  notes?: React.ReactNode; // Optional children prop
+  notes?: React.ReactNode;
 }
 
 // DiaryEntry Component
