@@ -3,7 +3,7 @@ import "./DiaryEntry.css";
 
 interface DiaryEntryProps {
   date: string;
-  entry: React.ReactNode[];
+  entry: React.ReactNode;
   nextSteps?: React.ReactNode;
   notes?: React.ReactNode;
 }
