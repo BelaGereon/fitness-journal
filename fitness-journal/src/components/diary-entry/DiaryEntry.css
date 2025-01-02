@@ -2,17 +2,17 @@
   --gap: clamp(1rem, 6vw, 3rem);
   --full: minmax(var(--gap), 1fr);
   --content: min(50ch, 100% - var(--gap) * 2);
-  --popout: minmax(0, 2rem);
-  --feature: minmax(0, 5rem);
+  --notes: minmax(0, 2rem);
+  --next-steps: minmax(0, 5rem);
 
   display: grid;
   grid-template-columns:
     [full-start] var(--full)
-    [feature-start] var(--feature)
-    [popout-start] var(--popout)
+    [next-steps-start] var(--next-steps)
+    [notes-start] var(--notes)
     [content-start] var(--content) [content-end]
-    var(--popout) [popout-end]
-    var(--feature) [feature-end]
+    var(--notes) [notes-end]
+    var(--next-steps) [next-steps-end]
     var(--full) [full-end];
 }
 
@@ -22,15 +22,16 @@
   border-radius: clamp(0.5rem, 1vw, 1rem);
 }
 
-.popout {
-  grid-column: popout;
+.notes {
+  grid-column: notes;
   background-color: var(--card-background-color);
 }
 
-.feature {
-  grid-column: feature;
+.next-steps {
+  grid-column: next-steps;
   color: var(--background-color);
   background-color: var(--primary-accent-color);
+  margin: 1rem 0 1rem 0;
 }
 
 .full {
