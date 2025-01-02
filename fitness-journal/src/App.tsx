@@ -16,7 +16,7 @@ function App() {
               Average kcals/day are at ±2350 kcal for the week, overate a bit on
               some days.
             </div>,
-            <div className="notes">
+            <div>
               Average weight went <b>DOWN</b> by ±0,5kg over the week, so I
               should definitely start to increase my kcals and see where it goes
               from there.
@@ -31,19 +31,20 @@ function App() {
               won't gain that much weight and just maintain my weight, maybe
               even recomp a little...
             </div>,
-            <div className="notes">
+            <div>
               I'll stay at 2700kcals at least on week, maybe even two to make
               sure I account for water-weight-fluctuations in case my weight
               shoots up the next week.
             </div>,
-            <div className="next-steps">
-              <b>TAKEAWAY FOR NEXT DIET:</b>
-              <br />
+          ]}
+          notes={[
+            <div>
               I think it's a good idea for me to incorporate diet-breaks into
               the next fatloss-phase, maybe at a 3:1-ratio (3 weeks fatloss, 1
               week maintenance) and use the maintenance-weeks or -days for
               deloading as well.
-              <br />
+            </div>,
+            <div>
               That way I can hopefully offset metaboloc adaptations and also get
               a little periodization for my training going.
             </div>,
