@@ -15,23 +15,33 @@ const DiaryEntry: React.FC<DiaryEntryProps> = ({
   nextSteps,
   notes,
 }) => {
+  const renderNextSteps = () => {
+    if (!nextSteps) return null;
+    return (
+      <div className="next-steps-section next-steps">
+        <h3>NEXT STEPS</h3>
+        <div>{nextSteps}</div>
+      </div>
+    );
+  };
+
+  const renderNotes = () => {
+    if (!notes) return null;
+    return (
+      <div className="notes-section notes">
+        <h4>NOTES</h4>
+        <div>{notes}</div>
+      </div>
+    );
+  };
+
   return (
     <div className="diary-entry">
       <h3>{date}</h3>
       <div className="content">
         {entry}
-        {nextSteps && (
-          <div className="next-steps-section next-steps">
-            <h3>NEXT STEPS</h3>
-            <div>{nextSteps}</div>
-          </div>
-        )}
-        {notes && (
-          <div className="notes-section notes">
-            <h4>NOTES</h4>
-            <div>{notes}</div>
-          </div>
-        )}
+        {renderNextSteps()}
+        {renderNotes()}
       </div>
     </div>
   );

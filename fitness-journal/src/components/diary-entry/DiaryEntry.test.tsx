@@ -11,24 +11,12 @@ describe("DiaryEntry Component", () => {
     render(<DiaryEntry date={date} entry={[entryContent]} {...props} />);
   };
 
-  it("renders without crashing", () => {
+  it("renders correctly without optional props", () => {
     renderComponent();
     expect(screen.getByText(date)).toBeInTheDocument();
-  });
-
-  it("renders entry content correctly", () => {
-    renderComponent();
     expect(screen.getByText("Test Entry")).toBeInTheDocument();
     expect(screen.getByText("Test Entry 2")).toBeInTheDocument();
-  });
-
-  it("does not render next steps section if not provided", () => {
-    renderComponent();
     expect(screen.queryByText("NEXT STEPS")).not.toBeInTheDocument();
-  });
-
-  it("does not render notes section if not provided", () => {
-    renderComponent();
     expect(screen.queryByText("NOTES")).not.toBeInTheDocument();
   });
 
@@ -42,6 +30,16 @@ describe("DiaryEntry Component", () => {
   it("renders notes section when provided", () => {
     const notes = <div>Notes Content</div>;
     renderComponent({ notes });
+    expect(screen.getByText("NOTES")).toBeInTheDocument();
+    expect(screen.getByText("Notes Content")).toBeInTheDocument();
+  });
+
+  it("renders both next steps and notes sections when provided", () => {
+    const nextSteps = <div>Next Steps Content</div>;
+    const notes = <div>Notes Content</div>;
+    renderComponent({ nextSteps, notes });
+    expect(screen.getByText("NEXT STEPS")).toBeInTheDocument();
+    expect(screen.getByText("Next Steps Content")).toBeInTheDocument();
     expect(screen.getByText("NOTES")).toBeInTheDocument();
     expect(screen.getByText("Notes Content")).toBeInTheDocument();
   });
