@@ -43,4 +43,14 @@ describe("DiaryEntry Component", () => {
     expect(screen.getByText("NOTES")).toBeInTheDocument();
     expect(screen.getByText("Notes Content")).toBeInTheDocument();
   });
+
+  it("does not render next steps section when provided with empty content array", () => {
+    renderComponent({ nextSteps: [] });
+    expect(screen.queryByText("NEXT STEPS")).not.toBeInTheDocument();
+  });
+
+  it("does not render notes section when provided with empty content array", () => {
+    renderComponent({ notes: [] });
+    expect(screen.queryByText("NOTES")).not.toBeInTheDocument();
+  });
 });

@@ -87,6 +87,159 @@ function App() {
             </div>,
           ]}
         ></DiaryEntry>
+        <DiaryEntry
+          date="03. January 2025"
+          entry={[
+            <div>
+              Workout-consistency is a bit off the last week, but I have / had a
+              lot of disruptions like holidays, NYE and tattoo-sessions to deal
+              with. <br />
+              Next week will probably be the same again because of
+              tattoo-appointments and the linked rest-days I have to take
+              because of them. <br />I will try to at least track my calories
+              accurately and hit my step goal, that should be okay for now to
+              keep me on track.
+            </div>,
+            <div>
+              I spoke with <b>REDACTED</b> about coaching him, we'll start that
+              around March when we both have more time for working out and don't
+              have too much other stuff going on in our lifes at the same time.
+              And the gym will probably be less crowded by then as well, so
+              win-win I would say.
+            </div>,
+            <div>
+              I'll get one more good workout in today before my
+              tattoo-appointment tomorrow, I'll try to make the most of it so
+              the days after can be used to build some new muscle.
+            </div>,
+            <div>
+              Oh, and I must not forget to do some more reasearch on building
+              and progressing a meso-cycle for beginners, tho I have some ideas
+              already.
+            </div>,
+          ]}
+          nextSteps={[
+            <div>
+              Build two basic workouts for one week, full-body training with
+              some variation.
+            </div>,
+            <div>
+              Guestimate first nutritional requirements for <b>REDACTED</b> and
+              see how we can roughly start him in the right direction.
+            </div>,
+          ]}
+        ></DiaryEntry>
+        <DiaryEntry
+          date="05. January 2025"
+          entry={[
+            <div>
+              Weight is down to ±80,5kgs, if this continues I can increase my
+              kcals to ±2600-2700kcals, but ONLY if I can also maintain an
+              appropriate training volume and activity level as well.
+            </div>,
+            <div>
+              Since I will be getting tattooed again on Thursday and the week
+              after on Saturday, it might be a good idea to do full-body
+              workouts twice per week instead of trying to hit 4
+              training-sessions, because the days after getting tattooed I can't
+              train anyway. <br /> I will decide if I change my trainings until
+              March soon, but not today.
+            </div>,
+            <div>
+              I created a first draft for <b>REDACTED</b> training for March,
+              interested to see how I will adapt to it and if / how much extra
+              sessions I will do between Wednesdays and Sundays. Maybe some
+              extra arm- and shoulder-workouts, depending on the soreness-levels
+              on the days after training with <b>REDACTED</b>.
+            </div>,
+          ]}
+          nextSteps={[
+            <div>
+              Build specialization-days to fill gaps between training-sessions
+              with <b>REDACTED</b>.
+            </div>,
+            <div>
+              Adjust calory-intake starting from Monday 06th and see how weight
+              reacts.
+            </div>,
+          ]}
+        ></DiaryEntry>
+        <DiaryEntry
+          date="12. January 2025"
+          entry={[
+            <div>
+              I ate a LOT of sweet stuff yesterday and over-ate by ±500kcals,
+              should takt it easy ont he snacks today and focus on protein.
+            </div>,
+            <div>
+              Training has been lacking a bit the last week, but that was mainly
+              due to the tattoo-session on Thursday and the soreness that
+              followed, so I'm not too worried about that. <br />I was able to
+              maintain my weight throughout the last week, mainly because I
+              collected more steps on avery I think, at least compared to the
+              week before that (±8380 vs. ±9741 steps/day, tendency rising
+              because it is morning as I am currently writing this entry.)
+            </div>,
+            <div>
+              This shows that my maintenance right now actually is around 2600 -
+              2700 kcals/day, together with working out for ±2 h ours / week and
+              averaging ±9000 - 10.000 steps / day. <br />
+              If I can get a more intense workout routine going I might be able
+              to push it to ±2800 - 2900 kcals/day, but let's not get ahead of
+              myself.
+            </div>,
+          ]}
+          nextSteps={[
+            <div>
+              Stay consistent with activity level and kcals until the 19th
+              January
+            </div>,
+            <div>
+              Get at least two full-body workouts in until the 19th January.
+            </div>,
+          ]}
+          notes={[
+            <div>
+              It looks like I lost some weight after increasing my kcals to
+              ±2600kcals/day, probably due to the higher step count. I will try
+              to replicate this next week and then adjust my macros and kcals
+              accordingly.
+            </div>,
+          ]}
+        ></DiaryEntry>
+        <DiaryEntry
+          date="14. January 2025"
+          entry={[
+            <div>
+              Workout yesterday went pretty good, tho I didn't manage to finish
+              everything fuo to some time- and fatigue-issues. <br />I think I
+              should redesign the full-body workouts a bit so that I am
+              definitely able to get all of the major musclegroups done before
+              fatigue sets in.
+              <br />I could do two days with the four major compound lifts and
+              then add a third optional day woth some more isolation-excercises
+              and super-sets. I think I'm doing that right after finishing this
+              entry actually.
+            </div>,
+            <div>
+              My weight didn't go up noticeabley, even tho I over-ate over the
+              weekend and didn't workout much. Good sign that there might be
+              some recomping going on under the hood, because I was able to
+              increase my benchpress by a noticeable amount. If this trend con
+              tinues I will increase my kcals to ±2750kcals and see where my
+              weight moves or if ti stays consistent.
+            </div>,
+            <div>
+              I will "finish" my workout from yesterday and then tweak the
+              workout-routine like I mentioned above.
+            </div>,
+          ]}
+          nextSteps={[
+            <div>Finish workout.</div>,
+            <div>Redesign workout routine.</div>,
+          ]}
+          notes={[]}
+        ></DiaryEntry>
       </body>
     </>
   );
