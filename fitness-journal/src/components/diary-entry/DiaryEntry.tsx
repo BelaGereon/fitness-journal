@@ -16,7 +16,8 @@ const DiaryEntry: React.FC<DiaryEntryProps> = ({
   notes,
 }) => {
   const renderNextSteps = () => {
-    if (!nextSteps) return null;
+    const nextStepsAreEmpty = Array.isArray(nextSteps) && !nextSteps.length;
+    if (!nextSteps || nextStepsAreEmpty) return null;
     return (
       <div className="next-steps-section next-steps">
         <h3>NEXT STEPS</h3>
@@ -26,7 +27,8 @@ const DiaryEntry: React.FC<DiaryEntryProps> = ({
   };
 
   const renderNotes = () => {
-    if (!notes) return null;
+    const notesAreEmpty = Array.isArray(notes) && !notes.length;
+    if (!notes || notesAreEmpty) return null;
     return (
       <div className="notes-section notes">
         <h4>NOTES</h4>

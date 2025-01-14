@@ -207,6 +207,39 @@ function App() {
             </div>,
           ]}
         ></DiaryEntry>
+        <DiaryEntry
+          date="14. January 2025"
+          entry={[
+            <div>
+              Workout yesterday went pretty good, tho I didn't manage to finish
+              everything fuo to some time- and fatigue-issues. <br />I think I
+              should redesign the full-body workouts a bit so that I am
+              definitely able to get all of the major musclegroups done before
+              fatigue sets in.
+              <br />I could do two days with the four major compound lifts and
+              then add a third optional day woth some more isolation-excercises
+              and super-sets. I think I'm doing that right after finishing this
+              entry actually.
+            </div>,
+            <div>
+              My weight didn't go up noticeabley, even tho I over-ate over the
+              weekend and didn't workout much. Good sign that there might be
+              some recomping going on under the hood, because I was able to
+              increase my benchpress by a noticeable amount. If this trend con
+              tinues I will increase my kcals to ±2750kcals and see where my
+              weight moves or if ti stays consistent.
+            </div>,
+            <div>
+              I will "finish" my workout from yesterday and then tweak the
+              workout-routine like I mentioned above.
+            </div>,
+          ]}
+          nextSteps={[
+            <div>Finish workout.</div>,
+            <div>Redesign workout routine.</div>,
+          ]}
+          notes={[]}
+        ></DiaryEntry>
       </body>
     </>
   );
