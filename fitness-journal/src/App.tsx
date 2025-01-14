@@ -164,6 +164,49 @@ function App() {
             </div>,
           ]}
         ></DiaryEntry>
+        <DiaryEntry
+          date="12. January 2025"
+          entry={[
+            <div>
+              I ate a LOT of sweet stuff yesterday and over-ate by ±500kcals,
+              should takt it easy ont he snacks today and focus on protein.
+            </div>,
+            <div>
+              Training has been lacking a bit the last week, but that was mainly
+              due to the tattoo-session on Thursday and the soreness that
+              followed, so I'm not too worried about that. <br />I was able to
+              maintain my weight throughout the last week, mainly because I
+              collected more steps on avery I think, at least compared to the
+              week before that (±8380 vs. ±9741 steps/day, tendency rising
+              because it is morning as I am currently writing this entry.)
+            </div>,
+            <div>
+              This shows that my maintenance right now actually is around 2600 -
+              2700 kcals/day, together with working out for ±2 h ours / week and
+              averaging ±9000 - 10.000 steps / day. <br />
+              If I can get a more intense workout routine going I might be able
+              to push it to ±2800 - 2900 kcals/day, but let's not get ahead of
+              myself.
+            </div>,
+          ]}
+          nextSteps={[
+            <div>
+              Stay consistent with activity level and kcals until the 19th
+              January
+            </div>,
+            <div>
+              Get at least two full-body workouts in until the 19th January.
+            </div>,
+          ]}
+          notes={[
+            <div>
+              It looks like I lost some weight after increasing my kcals to
+              ±2600kcals/day, probably due to the higher step count. I will try
+              to replicate this next week and then adjust my macros and kcals
+              accordingly.
+            </div>,
+          ]}
+        ></DiaryEntry>
       </body>
     </>
   );
