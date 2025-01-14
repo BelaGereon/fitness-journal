@@ -87,6 +87,48 @@ function App() {
             </div>,
           ]}
         ></DiaryEntry>
+        <DiaryEntry
+          date="03. January 2025"
+          entry={[
+            <div>
+              Workout-consistency is a bit off the last week, but I have / had a
+              lot of disruptions like holidays, NYE and tattoo-sessions to deal
+              with. <br />
+              Next week will probably be the same again because of
+              tattoo-appointments and the linked rest-days I have to take
+              because of them. <br />I will try to at least track my calories
+              accurately and hit my step goal, that should be okay for now to
+              keep me on track.
+            </div>,
+            <div>
+              I spoke with <b>REDACTED</b> about coaching him, we'll start that
+              around March when we both have more time for working out and don't
+              have too much other stuff going on in our lifes at the same time.
+              And the gym will probably be less crowded by then as well, so
+              win-win I would say.
+            </div>,
+            <div>
+              I'll get one more good workout in today before my
+              tattoo-appointment tomorrow, I'll try to make the most of it so
+              the days after can be used to build some new muscle.
+            </div>,
+            <div>
+              Oh, and I must not forget to do some more reasearch on building
+              and progressing a meso-cycle for beginners, tho I have some ideas
+              already.
+            </div>,
+          ]}
+          nextSteps={[
+            <div>
+              Build two basic workouts for one week, full-body training with
+              some variation.
+            </div>,
+            <div>
+              Guestimate first nutritional requirements for <b>REDACTED</b> and
+              see how we can roughly start him in the right direction.
+            </div>,
+          ]}
+        ></DiaryEntry>
       </body>
     </>
   );
