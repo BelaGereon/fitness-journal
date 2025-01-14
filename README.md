@@ -25,3 +25,4 @@ Visualizing progress like weightgain/-loss and training-progress.
 Some interesting UI-component-libraries to check out:
 
 - Material-Tailwind: https://www.material-tailwind.com/docs/react/guide/vite
+- nextUI: https://nextui.org/docs/frameworks/vite
