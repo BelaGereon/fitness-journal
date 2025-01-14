@@ -129,6 +129,41 @@ function App() {
             </div>,
           ]}
         ></DiaryEntry>
+        <DiaryEntry
+          date="05. January 2025"
+          entry={[
+            <div>
+              Weight is down to ±80,5kgs, if this continues I can increase my
+              kcals to ±2600-2700kcals, but ONLY if I can also maintain an
+              appropriate training volume and activity level as well.
+            </div>,
+            <div>
+              Since I will be getting tattooed again on Thursday and the week
+              after on Saturday, it might be a good idea to do full-body
+              workouts twice per week instead of trying to hit 4
+              training-sessions, because the days after getting tattooed I can't
+              train anyway. <br /> I will decide if I change my trainings until
+              March soon, but not today.
+            </div>,
+            <div>
+              I created a first draft for <b>REDACTED</b> training for March,
+              interested to see how I will adapt to it and if / how much extra
+              sessions I will do between Wednesdays and Sundays. Maybe some
+              extra arm- and shoulder-workouts, depending on the soreness-levels
+              on the days after training with <b>REDACTED</b>.
+            </div>,
+          ]}
+          nextSteps={[
+            <div>
+              Build specialization-days to fill gaps between training-sessions
+              with <b>REDACTED</b>.
+            </div>,
+            <div>
+              Adjust calory-intake starting from Monday 06th and see how weight
+              reacts.
+            </div>,
+          ]}
+        ></DiaryEntry>
       </body>
     </>
   );
